@@ -1,0 +1,101 @@
+{
+  "data": [
+    {
+      "id": "de88b426-9085-59d9-9164-67715b63a442",
+      "type": "fiat_account",
+      "name": "Cash (USD)",
+      "currency": "USD",
+      "primary_buy": true,
+      "primary_sell": true,
+      "instant_buy": true,
+      "instant_sell": true,
+      "created_at": "2021-01-07T16:11:07Z",
+      "updated_at": "2021-01-07T16:11:07Z",
+      "resource": "payment_method",
+      "resource_path": "/v2/payment-methods/de88b426-9085-59d9-9164-67715b63a442",
+      "limits": {
+        "type": "fiat_account",
+        "name": "Coinbase Account"
+      },
+      "allow_buy": true,
+      "allow_sell": true,
+      "allow_deposit": false,
+      "allow_withdraw": false,
+      "fiat_account": {
+        "id": "51ec9650-5309-5b09-8b60-5b543f1ef0b7",
+        "resource": "account",
+        "resource_path": "/v2/accounts/51ec9650-5309-5b09-8b60-5b543f1ef0b7"
+      },
+      "verified": true,
+      "minimum_purchase_amount": {
+        "amount": "1.00",
+        "currency": "USD"
+      }
+    },
+    {
+      "id": "f301af9e-de80-5276-896c-3a3c0c93ebaa",
+      "type": "ach_bank_account",
+      "name": "Chase - TOTAL CHECKING *****7155",
+      "currency": "USD",
+      "primary_buy": false,
+      "primary_sell": false,
+      "instant_buy": true,
+      "instant_sell": false,
+      "created_at": "2021-01-07T16:13:18Z",
+      "updated_at": "2021-01-07T16:13:19Z",
+      "resource": "payment_method",
+      "resource_path": "/v2/payment-methods/f301af9e-de80-5276-896c-3a3c0c93ebaa",
+      "limits": {
+        "type": "bank",
+        "name": "Bank Account",
+        "buy": [
+          {
+            "period_in_days": 1,
+            "total": {
+              "amount": "25000.00",
+              "currency": "USD"
+            },
+            "remaining": {
+              "amount": "25000.00",
+              "currency": "USD"
+            },
+            "description": "$25,000 of your $25,000 daily bank limit remaining",
+            "label": "Daily bank limit",
+            "next_requirement": null
+          }
+        ],
+        "deposit": [
+          {
+            "period_in_days": 1,
+            "total": {
+              "amount": "25000.00",
+              "currency": "USD"
+            },
+            "remaining": {
+              "amount": "25000.00",
+              "currency": "USD"
+            },
+            "description": "$25,000 of your $25,000 daily bank limit remaining",
+            "label": "Daily bank limit"
+          }
+        ]
+      },
+      "allow_buy": true,
+      "allow_sell": false,
+      "allow_deposit": true,
+      "allow_withdraw": true,
+      "verified": true,
+      "minimum_purchase_amount": {
+        "amount": "1.00",
+        "currency": "USD"
+      }
+    }
+  ],
+  "warnings": [
+    {
+      "id": "invalid_version",
+      "message": "Please supply a valid API version in YYYY-MM-DD format",
+      "url": "https://developers.coinbase.com/api#versioning"
+    }
+  ]
+}

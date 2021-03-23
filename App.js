@@ -1,21 +1,33 @@
 import React from 'react';
-import {Platform, StyleSheet, View} from 'react-native';
-import AppTextInput from "./app/component/AppTextInput";
-import RegisterScreen from "./app/screens/RegisterScreen";
+import {Platform, StyleSheet} from 'react-native';
+import {createStackNavigator} from "@react-navigation/stack";
+import {NavigationContainer} from "@react-navigation/native";
+import SignUpLandingScreen from './app/screens/SignUpLandingScreen';
+import LoginFormScreen from "./app/screens/LoginFormScreen";
+
+const Stack = createStackNavigator();
+const StackNavigator = () => (
+    <Stack.Navigator initalRouteName="text">
+        <Stack.Screen name="Login" component={LoginFormScreen}/>
+        <Stack.Screen name="SignUp" component={SignUpLandingScreen}/>
+    </Stack.Navigator>
+)
 
 
 export default function App() {
     const [value, onChangeText] = React.useState('Useless Placeholder');
 
+    /*return (
+         <View style={styles.rootContainer}>
+             <View style={styles.container}>
+                <LoginScreenBkp/>
+             </View>
+         </View>
+    );*/
     return (
-        <View style={styles.rootContainer}>
-            <View style={styles.container}>
-                <View style={styles.innerContainer}>
-                    <RegisterScreen/>
-
-                </View>
-            </View>
-        </View>
+        <NavigationContainer>
+            <StackNavigator/>
+        </NavigationContainer>
     );
 }
 
@@ -26,11 +38,11 @@ const styles = StyleSheet.create({
                 backgroundColor: 'red',
             },
             android: {
-                backgroundColor: 'blue',
+                /*backgroundColor: 'blue',*/
             },
             web: {
                 width: 400,
-                height: 400
+                height: 400,
             }
         }),
     },

@@ -1,0 +1,168 @@
+{
+  "pagination": {
+    "ending_before": null,
+    "starting_after": null,
+    "previous_ending_before": null,
+    "next_starting_after": null,
+    "limit": 25,
+    "order": "desc",
+    "previous_uri": null,
+    "next_uri": null
+  },
+  "data": [
+    {
+      "id": "bcfaee11-3d96-5fa5-afa1-0e3b0cc8157f",
+      "status": "completed",
+      "transaction": {
+        "id": "7c05a19e-e18f-525e-8008-ea725850653b",
+        "resource": "transaction",
+        "resource_path": "/v2/accounts/17804d27-4e3f-5169-8a48-3c4668a30f26/transactions/7c05a19e-e18f-525e-8008-ea725850653b"
+      },
+      "user_reference": "N2EZ7UUL",
+      "created_at": "2021-01-11T04:04:34Z",
+      "updated_at": "2021-01-11T21:06:44Z",
+      "resource": "buy",
+      "resource_path": "/v2/accounts/17804d27-4e3f-5169-8a48-3c4668a30f26/buys/bcfaee11-3d96-5fa5-afa1-0e3b0cc8157f",
+      "payment_method": {
+        "id": "f301af9e-de80-5276-896c-3a3c0c93ebaa",
+        "resource": "payment_method",
+        "resource_path": "/v2/payment-methods/f301af9e-de80-5276-896c-3a3c0c93ebaa"
+      },
+      "committed": true,
+      "payout_at": "2021-01-11T04:04:44Z",
+      "instant": true,
+      "fee": {
+        "amount": "3.52",
+        "currency": "USD"
+      },
+      "amount": {
+        "amount": "83.2049",
+        "currency": "EOS"
+      },
+      "total": {
+        "amount": "240.00",
+        "currency": "USD"
+      },
+      "subtotal": {
+        "amount": "236.48",
+        "currency": "USD"
+      },
+      "unit_price": {
+        "amount": "2.84",
+        "currency": "USD",
+        "scale": 2
+      },
+      "hold_until": "2021-01-14T00:00:00Z",
+      "hold_days": 3,
+      "idem": "d5ad33d5-3d57-45a2-8b0c-eece8fae385e",
+      "next_step": null,
+      "is_first_buy": false,
+      "requires_completion_step": false
+    },
+    {
+      "id": "d5f57296-3169-52ea-bef5-e1c1862564e1",
+      "status": "completed",
+      "transaction": {
+        "id": "5d7ca15c-8ccd-568b-a13b-5472dfaf86b8",
+        "resource": "transaction",
+        "resource_path": "/v2/accounts/17804d27-4e3f-5169-8a48-3c4668a30f26/transactions/5d7ca15c-8ccd-568b-a13b-5472dfaf86b8"
+      },
+      "user_reference": "872KMN6J",
+      "created_at": "2021-01-10T21:30:42Z",
+      "updated_at": "2021-01-10T21:34:05Z",
+      "resource": "buy",
+      "resource_path": "/v2/accounts/17804d27-4e3f-5169-8a48-3c4668a30f26/buys/d5f57296-3169-52ea-bef5-e1c1862564e1",
+      "payment_method": {
+        "id": "de88b426-9085-59d9-9164-67715b63a442",
+        "resource": "payment_method",
+        "resource_path": "/v2/payment-methods/de88b426-9085-59d9-9164-67715b63a442"
+      },
+      "committed": true,
+      "payout_at": "2021-01-10T21:30:56Z",
+      "instant": true,
+      "fee": {
+        "amount": "1.99",
+        "currency": "USD"
+      },
+      "amount": {
+        "amount": "15.2763",
+        "currency": "EOS"
+      },
+      "total": {
+        "amount": "49.00",
+        "currency": "USD"
+      },
+      "subtotal": {
+        "amount": "47.01",
+        "currency": "USD"
+      },
+      "unit_price": {
+        "amount": "3.08",
+        "currency": "USD",
+        "scale": 2
+      },
+      "hold_until": null,
+      "hold_days": 0,
+      "idem": "c415a656-cb02-4807-a526-fefe6dcf23ae",
+      "next_step": null,
+      "is_first_buy": false,
+      "requires_completion_step": false
+    },
+    {
+      "id": "26a54605-6d9e-585d-8c1a-77be5c2f2cbe",
+      "status": "completed",
+      "transaction": {
+        "id": "c048bc63-2531-5559-acd9-eee56d30ef03",
+        "resource": "transaction",
+        "resource_path": "/v2/accounts/17804d27-4e3f-5169-8a48-3c4668a30f26/transactions/c048bc63-2531-5559-acd9-eee56d30ef03"
+      },
+      "user_reference": "EEJH9ELZ",
+      "created_at": "2021-01-10T21:25:49Z",
+      "updated_at": "2021-01-11T21:04:54Z",
+      "resource": "buy",
+      "resource_path": "/v2/accounts/17804d27-4e3f-5169-8a48-3c4668a30f26/buys/26a54605-6d9e-585d-8c1a-77be5c2f2cbe",
+      "payment_method": {
+        "id": "f301af9e-de80-5276-896c-3a3c0c93ebaa",
+        "resource": "payment_method",
+        "resource_path": "/v2/payment-methods/f301af9e-de80-5276-896c-3a3c0c93ebaa"
+      },
+      "committed": true,
+      "payout_at": "2021-01-10T21:25:54Z",
+      "instant": true,
+      "fee": {
+        "amount": "6.02",
+        "currency": "USD"
+      },
+      "amount": {
+        "amount": "130.1716",
+        "currency": "EOS"
+      },
+      "total": {
+        "amount": "410.00",
+        "currency": "USD"
+      },
+      "subtotal": {
+        "amount": "403.98",
+        "currency": "USD"
+      },
+      "unit_price": {
+        "amount": "3.10",
+        "currency": "USD",
+        "scale": 2
+      },
+      "hold_until": "2021-01-15T00:00:00Z",
+      "hold_days": 5,
+      "idem": "c8c8aff5-4449-473c-9b49-c61513c29623",
+      "next_step": null,
+      "is_first_buy": false,
+      "requires_completion_step": false
+    }
+  ],
+  "warnings": [
+    {
+      "id": "invalid_version",
+      "message": "Please supply a valid API version in YYYY-MM-DD format",
+      "url": "https://developers.coinbase.com/api#versioning"
+    }
+  ]
+}

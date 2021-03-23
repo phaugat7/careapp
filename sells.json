@@ -1,0 +1,66 @@
+{
+  "pagination": {
+    "ending_before": null,
+    "starting_after": null,
+    "previous_ending_before": null,
+    "next_starting_after": null,
+    "limit": 25,
+    "order": "desc",
+    "previous_uri": null,
+    "next_uri": null
+  },
+  "data": [
+    {
+      "id": "3d7daa23-f6fe-592a-b2aa-70f89aaa6506",
+      "status": "completed",
+      "transaction": {
+        "id": "d116c6e0-86a6-5fb1-a8d6-0f364f25f410",
+        "resource": "transaction",
+        "resource_path": "/v2/accounts/17804d27-4e3f-5169-8a48-3c4668a30f26/transactions/d116c6e0-86a6-5fb1-a8d6-0f364f25f410"
+      },
+      "user_reference": "QZ7YQH4A",
+      "created_at": "2021-01-17T17:21:28Z",
+      "updated_at": "2021-01-17T17:21:45Z",
+      "resource": "sell",
+      "resource_path": "/v2/accounts/17804d27-4e3f-5169-8a48-3c4668a30f26/sells/3d7daa23-f6fe-592a-b2aa-70f89aaa6506",
+      "payment_method": {
+        "id": "de88b426-9085-59d9-9164-67715b63a442",
+        "resource": "payment_method",
+        "resource_path": "/v2/payment-methods/de88b426-9085-59d9-9164-67715b63a442"
+      },
+      "committed": true,
+      "payout_at": "2021-01-17T17:21:42Z",
+      "instant": true,
+      "fee": {
+        "amount": "1.99",
+        "currency": "USD"
+      },
+      "amount": {
+        "amount": "12.0000",
+        "currency": "EOS"
+      },
+      "total": {
+        "amount": "30.92",
+        "currency": "USD"
+      },
+      "subtotal": {
+        "amount": "32.91",
+        "currency": "USD"
+      },
+      "unit_price": {
+        "amount": "2.74",
+        "currency": "USD",
+        "scale": 2
+      },
+      "idem": "1fe0b067-d962-4838-bf1e-a83726e31692",
+      "next_step": null
+    }
+  ],
+  "warnings": [
+    {
+      "id": "invalid_version",
+      "message": "Please supply a valid API version in YYYY-MM-DD format",
+      "url": "https://developers.coinbase.com/api#versioning"
+    }
+  ]
+}

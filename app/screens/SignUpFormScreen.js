@@ -1,12 +1,12 @@
-import React, {useState} from "react";
-import {StyleSheet, View} from "react-native";
-import Screen from "../component/Screen";
+import React from 'react';
+import {Image, StyleSheet, View} from 'react-native';
+import * as Yup from "yup";
 import AppFormField from "../component/forms/AppFormField";
 import AppForm from "../component/forms/AppForm";
-import * as Yup from "yup";
-import ErrorMessage from "../component/forms/ErrorMessage";
-import colors from "../config/colors";
 import SubmitButton from "../component/forms/SubmitButton";
+import colors from '../config/colors';
+import LinkText from "../component/LinkText";
+import appStyles from "../config/appStyles";
 
 const validationSchema = Yup.object().shape({
     firstName: Yup.string().required().label("FirstName"),
@@ -15,21 +15,25 @@ const validationSchema = Yup.object().shape({
     password: Yup.string().required().min(4).label("Password"),
 });
 
+const SignUpFormScreen = () => {
 
-function RegisterScreen(props) {
-    const [error, setError] = useState();
-    const handleSubmit =  (userInfo) => {
+    const handleSubmit = (userInfo) => {
         console.log(userInfo)
-    }
-        return (
-        <>
-            <Screen style={styles.container}>
+    };
+
+    return (
+        <View style={styles.signUpFormRootContainer}>
+            <View style={styles.signUpFormHeaderContainer}>
+                <Image
+                    style={styles.logo}
+                    source={require("../assets/homepage.png")}/>
+                {/*TODO Add logo here*/}
+            </View>
+            <View style={styles.signUpFormContainer}>
                 <AppForm
-                    initialValues={{firstName: "", lastName: "", email: "", password:""}}
+                    initialValues={{firstName: "", lastName: "", email: "", password: ""}}
                     onSubmit={handleSubmit}
-                    validationSchema={validationSchema}
-                >
-                    <ErrorMessage error={error} visible={error}/>
+                    validationSchema={validationSchema}>
                     <AppFormField
                         autoCorrect={false}
                         icon="account"
@@ -61,19 +65,46 @@ function RegisterScreen(props) {
                         textContentType="password"
                     />
                     <SubmitButton title="Register"/>
+                    <LinkText linkScreen="Login" style={appStyles.linkStyle}>
+                        I am already a member, Sign In.
+                    </LinkText>
                 </AppForm>
-            </Screen>
-        </>
+            </View>
+        </View>
     );
-}
+};
 
 const styles = StyleSheet.create({
-    container: {
-        padding: 0,
-        backgroundColor: colors.light
+    signUpFormContainer: {
+        width: 400,
+        height: 500,
+        backgroundColor: colors.white
     },
-    activity: {
-        padding: 10
+    signUpFormHeaderContainer: {
+        width: 400,
+        height: 100,
+        backgroundColor: 'powderblue',
+        justifyContent: 'center',
+        flexWrap: "wrap",
+        flexDirection: "row",
+    },
+    signUpFormRootContainer: {
+        flex: 1,
+        alignItems: 'center'
+    },
+    logo: {
+        width: 80,
+        height: 80,
+        alignSelf: 'center',
+        marginTop: 10,
+        marginBottom: 10,
+    },
+    linkStyle: {
+        color: colors.linkColor,
+        alignSelf: 'center'
     }
+
+
 });
-export default RegisterScreen;
+
+export default SignUpFormScreen;
