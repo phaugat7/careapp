@@ -6,7 +6,8 @@ export default {
     appText: {
         fontSize: 17,
         width: '100%',
-        fontFamily: 'SF Pro Text,SF Pro Icons,AOS Icons,Helvetica',
+        //fontFamily: 'SF Pro Text,SF Pro Icons,AOS Icons,Helvetica',
+        fontFamily: Platform.OS === "android" ? "Roboto" : "Avenir",
         textAlign: 'center',
 
     },
@@ -15,6 +16,7 @@ export default {
         backgroundColor: colors.white,
         fontSize: 18,
         width: '100%',
+        //fontFamily: Platform.OS === "android" ? "Roboto" : "Avenir"
         fontFamily: Platform.OS === "android" ? "Roboto" : "Avenir"
     },
 
@@ -22,7 +24,8 @@ export default {
         color: '#06c',
         fontSize: 17,
         fontWeight: '400',
-        fontFamily: 'SF Pro Text,SF Pro Icons,AOS Icons,Helvetica'
+        //fontFamily: 'SF Pro Text,SF Pro Icons,AOS Icons,Helvetica'
+        fontFamily: Platform.OS === "android" ? "Roboto" : "Avenir"
     },
     loginContainer: {
         alignItems: 'center',
