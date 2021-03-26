@@ -1,13 +1,15 @@
 import React from 'react';
 import {Platform, StyleSheet} from 'react-native';
 import {createStackNavigator} from "@react-navigation/stack";
-import {NavigationContainer} from "@react-navigation/native";
 import SignUpLandingScreen from './app/screens/SignUpLandingScreen';
 import LoginFormScreen from "./app/screens/LoginFormScreen";
+import SignupProfile from "./app/screens/SignupProfile";
+import {NavigationContainer} from "@react-navigation/native";
 
 const Stack = createStackNavigator();
 const StackNavigator = () => (
     <Stack.Navigator initalRouteName="text">
+        <Stack.Screen name="SingUpProfile" component={SignupProfile}/>
         <Stack.Screen name="Login" component={LoginFormScreen}/>
         <Stack.Screen name="SignUp" component={SignUpLandingScreen}/>
     </Stack.Navigator>
@@ -17,10 +19,10 @@ const StackNavigator = () => (
 export default function App() {
     const [value, onChangeText] = React.useState('Useless Placeholder');
 
-    /*return (
+  /*  return (
          <View style={styles.rootContainer}>
              <View style={styles.container}>
-                <LoginScreenBkp/>
+                 <DatePicker/>
              </View>
          </View>
     );*/

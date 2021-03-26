@@ -5,10 +5,13 @@ export default {
     white: '#fff',
     black: '#000',
     medium: '#6e6969',
-    light: '#f8f4f4',
+    light: '#eceaea',
+    lightgray: 'lightGray',
     dark: '#0c0c0c',
+    grey: 'grey',
     danger: '#ff5252',
     linkColor: '#0054a8',
     buttonColor: '#0071E3',
-    backgroundColor: '#F5F5F5'
+    backgroundColor: '#F5F5F5',
+    touchableButtonColor: '#0379CE',
 }

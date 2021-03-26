@@ -6,8 +6,8 @@ export default {
     appText: {
         fontSize: 17,
         width: '100%',
-        //fontFamily: 'SF Pro Text,SF Pro Icons,AOS Icons,Helvetica',
-        fontFamily: Platform.OS === "android" ? "Roboto" : "Avenir",
+        fontFamily: 'sans-serif',
+        //fontFamily: Platform.OS === "android" ? "Roboto" : "Avenir",
         textAlign: 'center',
 
     },
@@ -17,15 +17,15 @@ export default {
         fontSize: 18,
         width: '100%',
         //fontFamily: Platform.OS === "android" ? "Roboto" : "Avenir"
-        fontFamily: Platform.OS === "android" ? "Roboto" : "Avenir"
+        fontFamily: 'sans-serif'
     },
 
     linkText: {
         color: '#06c',
         fontSize: 17,
         fontWeight: '400',
-        //fontFamily: 'SF Pro Text,SF Pro Icons,AOS Icons,Helvetica'
-        fontFamily: Platform.OS === "android" ? "Roboto" : "Avenir"
+        //fontFamily: Platform.OS === "android" ? "sans-serif" : "sans-serif"
+        fontFamily: 'sans-serif'
     },
     loginContainer: {
         alignItems: 'center',
